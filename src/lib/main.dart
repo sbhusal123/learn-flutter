@@ -52,9 +52,50 @@ class Home extends StatelessWidget {
         // padding: EdgeInsets.only(left: 10, top: 20, right: 30, bottom: 40),
       // ),
 
-      body: Padding(
-        child: Text('Click Me'),
-        padding: EdgeInsets.all(90),
+      // body: Padding(
+      //   child: Text('Click Me'),
+      //   padding: EdgeInsets.all(90),
+      // ),
+
+      // body: Row(
+      //   // mainAxisAlignment: MainAxisAlignment.center,
+      //   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+
+      //   // crossAxisAlignment: CrossAxisAlignment.end,
+      //   children: [
+      //     Text('Hello world'),
+      //     TextButton(onPressed: () => {}, child: Text('Click Me')),
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: EdgeInsets.all(30),
+      //       child: Text('Hello world'),
+      //     )
+      //   ],
+      // ),
+
+      body: Column(
+        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            padding: EdgeInsets.all(10.0),
+            color: Colors.cyan,
+            child: Text('one')
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.pinkAccent,
+            child: Text('Two')
+          ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color: Colors.amber,
+            child: Text('Three')
+          ),
+        ]
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => print("Pressed"),
