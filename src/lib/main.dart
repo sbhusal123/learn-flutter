@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
+      // body: Center(
         // child: Image(image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF98sbQeNeSMz3nbGKwwnh4XyFU-ojyeNghA&s'),)
         // child: Image(image: AssetImage('assets/space-2.jpg')),
         // child: Icon(Icons.airport_shuttle, color: Colors.amber, size: 50,)
@@ -35,12 +35,26 @@ class Home extends StatelessWidget {
         //   ),
         // )
 
-        child: IconButton(
-          icon: Icon(Icons.alternate_email),
-          onPressed: () => print("Pressed"),
-          color: Colors.amber,
-        )
+      //   child: IconButton(
+      //     icon: Icon(Icons.alternate_email),
+      //     onPressed: () => print("Pressed"),
+      //     color: Colors.amber,
+      //   )
 
+      // ),
+      // body: Container(
+      //   color: Colors.grey,
+      //   child: Text('Hello'),
+      //   padding: EdgeInsets.fromLTRB(10, 20, 30, 40),
+      //   margin: EdgeInsets.all(30),
+        // padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+        // padding: EdgeInsets.all(10),
+        // padding: EdgeInsets.only(left: 10, top: 20, right: 30, bottom: 40),
+      // ),
+
+      body: Padding(
+        child: Text('Click Me'),
+        padding: EdgeInsets.all(90),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => print("Pressed"),
