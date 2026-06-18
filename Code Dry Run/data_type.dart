@@ -18,10 +18,10 @@ void main() {
   // isActive = true;
   // print(isActive);
 
-  List<String> names = ["Surya", "Bhusal"];
-  names.add("Ramesh");
-  names.remove("Surya");
-  print(names);
+  // List<String> names = ["Surya", "Bhusal"];
+  // names.add("Ramesh");
+  // names.remove("Surya");
+  // print(names);
 
   // dynamic foo = "Hello";
   // foo = 123;
