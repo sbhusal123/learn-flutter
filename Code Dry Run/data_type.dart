@@ -4,12 +4,12 @@ void main() {
   // var name = "asdasd";
   // print(name);
 
-  num x = 10; // can be int or double
-  num y = 10.5;
-  num z = -10.5;
-  print(x);
-  print(y);
-  print(z);
+  // num x = 10; // can be int or double
+  // num y = 10.5;
+  // num z = -10.5;
+  // print(x);
+  // print(y);
+  // print(z);
 
   // String name = "Surya Bhusal";
   // print(name);
@@ -18,13 +18,15 @@ void main() {
   // isActive = true;
   // print(isActive);
 
-  // List<String> names = ["Surya", "Bhusal"];
-  // print(names);
+  List<String> names = ["Surya", "Bhusal"];
+  names.add("Ramesh");
+  names.remove("Surya");
+  print(names);
 
   // dynamic foo = "Hello";
   // foo = 123;
   // print(foo);
 
-  Map<String, num> ages = {"Surya": 22, "Ram": 20};
-  print(ages);
+  // Map<String, num> ages = {"Surya": 22, "Ram": 20};
+  // print(ages);
 }
