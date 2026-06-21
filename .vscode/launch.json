@@ -20,6 +20,26 @@
       "type": "dart",
       "flutterMode": "release",
       "program": "src/lib/main.dart"
+    },
+    {
+      "name": "ninja_id (Debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "ninja_id/lib/main.dart"
+    },
+    {
+      "name": "ninja_id (Profile Mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile",
+      "program": "ninja_id/lib/main.dart"
+    },
+    {
+      "name": "ninja_id (Release Mode)",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release",
+      "program": "ninja_id/lib/main.dart"
     }
   ]
 }
