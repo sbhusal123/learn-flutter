@@ -1,16 +1,84 @@
-# ninja_id
+# Ninja ID
 
-A new Flutter project.
+## Basic Layout
 
-## Getting Started
+```dart
+import 'package:flutter/material.dart';
 
-This project is a starting point for a Flutter application.
+void main() {
+  runApp(
+    MaterialApp(
+      home: NinjaCard(),
+    )
+  );
+}
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+class NinjaCard extends StatelessWidget {
+  const NinjaCard({super.key});
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey[900],
+      appBar: AppBar(
+        title: Text("Ninja ID Card", style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.grey[850],
+        centerTitle: true,
+      ),
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/images/chun-li.jpg'),
+                radius: 50,
+              ),
+            ),
+            Divider(height: 60, color: Colors.grey[800]),
+
+
+            Text(
+              'NAME',
+              style: TextStyle(color: Colors.grey, letterSpacing: 2)
+            ),
+            SizedBox(height: 5),
+            Text(
+              'Surya Bhusal',
+              style: TextStyle(
+                color: Colors.amberAccent,
+                letterSpacing: 2,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              )
+            ),            
+            SizedBox(height: 20),
+            Text(
+              'CURRENT NINJA LEVEL',
+              style: TextStyle(color: Colors.grey, letterSpacing: 2)
+            ),
+            Text(
+              '8',
+              style: TextStyle(color: Colors.amberAccent, fontSize: 28, fontWeight: FontWeight.bold)
+            ),
+            SizedBox(height: 20),
+            Text('EMAIL', style: TextStyle(color: Colors.grey, letterSpacing: 2)),
+            SizedBox(height: 10),
+            Row(
+              children: [
+                Icon(Icons.email, color: Colors.white ),
+                SizedBox(width: 10),
+                Text('amber@gmail.com', style: TextStyle(color: Colors.white))
+              ],
+            )
+          ],
+        ),
+      )
+    );
+  }
+}
+```
+
+
