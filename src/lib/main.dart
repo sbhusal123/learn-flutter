@@ -76,31 +76,61 @@ class Home extends StatelessWidget {
       //   ],
       // ),
 
-      body: Column(
-        // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      // body: Column(
+      //   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.stretch,
+      //   children: [
+      //     Container(
+      //       padding: EdgeInsets.all(10.0),
+      //       color: Colors.cyan,
+      //       child: Text('one')
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(20.0),
+      //       color: Colors.pinkAccent,
+      //       child: Text('Two')
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(30.0),
+      //       color: Colors.amber,
+      //       child: Text('Three')
+      //     ),
+      //   ]
+      // ),
+
+      body: Row(
         children: [
-          Container(
-            padding: EdgeInsets.all(10.0),
-            color: Colors.cyan,
-            child: Text('one')
+          // Expanded(child: Image(image: AssetImage('assets/space-2.jpg'))),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.cyan,
+              child: Text('one'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.pinkAccent,
-            child: Text('Two')
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.pinkAccent,
+              child: Text('two'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.amber,
-            child: Text('Three')
-          ),
-        ]
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30),
+              color: Colors.amber,
+              child: Text('three'),
+            ),
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => print("Pressed"),
-        child: Text("click"),
         backgroundColor: Colors.red[500],
+        child: Text("click"),
       ),
     );
   }
