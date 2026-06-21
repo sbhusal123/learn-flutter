@@ -12,3 +12,10 @@
 
 - [Stateful Widget](./Docs/6.%20Stateful%20Widget.md)
 
+
+
+## Projects In This Repo:
+
+- [Ninja ID: Basic Layout And Stateful Widget](./ninja_id/)
+
+- [Quotes Of The Day](./quotes/)
