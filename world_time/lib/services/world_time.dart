@@ -1,6 +1,7 @@
 import 'package:http/http.dart';
 
 import 'dart:convert';
+import 'package:intl/intl.dart';
 
 class WorldTime {
   String location; // location name for UI
@@ -38,7 +39,7 @@ class WorldTime {
       }
 
       // set time property
-      time = now.toString();
+      time = DateFormat.jm().format(now);
     } catch(e) {
       // print error
       print('ERROR Getting time: $e');
