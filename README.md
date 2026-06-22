@@ -16,6 +16,8 @@
 
 - [Function As A Parameter: Drilling Down State Setter Handlers](./Docs/8.%20Function%20As%20A%20Parameter.md)
 
+- [Navigation And Routing](./Docs/9.%20Multi%20Pages%20Routing.md)
+
 
 
 ## Projects In This Repo:
@@ -26,4 +28,4 @@
 
 - [Quotes Of The Day](./quotes/)
 
-- [World Time](./world_time/)
+- [World Time: Multi Pages Routing](./world_time/)
