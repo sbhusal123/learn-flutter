@@ -25,8 +25,9 @@ class _QuoteList extends State<QuoteList> {
 
   // callback function passed to the child widget
   void deleteQuote(Quote quote){
-    setState((){
-      quotes.where((q) => q != quote).toList();
+    List<Quote> newQuotes = quotes.where((q) => q!= quote).toList();
+    setState(() {
+      quotes = newQuotes;
     });
   }
 
@@ -45,7 +46,7 @@ class _QuoteList extends State<QuoteList> {
         children: quotes.map((quote) {
             return QuoteCard(
               quote: quote,
-              deleteQuote: deleteQuote
+              deleteQuote: deleteQuote,
             );
         }).toList()
       )

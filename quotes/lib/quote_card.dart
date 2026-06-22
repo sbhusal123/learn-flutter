@@ -38,7 +38,7 @@ class QuoteCard extends StatelessWidget {
           ),
           SizedBox(height: 10,),
           TextButton.icon(
-            onPressed: () => {deleteQuote(quote)},
+            onPressed: () {deleteQuote(quote);},
             icon: Icon(Icons.delete),
             label: Text("Delete Quote")
           )
