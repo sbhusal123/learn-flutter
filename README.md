@@ -20,7 +20,7 @@
 
 - [Stateful Widget Lifecycle](./Docs/10.%20Widget%20LifeCycle.md)
 
-- [Handling Asynchronous Request: Futures, Async And Await](./Docs/11.%20Handling%20Async%20Requests.md)
+- [Handling synchronous HTTP/API Requests: Futures, Async And Await](./Docs/11.%20Handling%20Async%20Requests.md)
 
 
 
