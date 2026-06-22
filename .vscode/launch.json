@@ -18,6 +18,12 @@
       "request": "launch",
       "type": "dart",
       "program": "quotes/lib/main.dart"
+    },
+    {
+      "name": "World Time (Debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "world_time/lib/main.dart"
     }
   ]
 }
