@@ -35,3 +35,19 @@
 - [Quotes Of The Day](./quotes/)
 
 - [World Time: Multi Pages Routing](./world_time/)
+
+## Flutter CLI commands:
+
+- **Create flutter project:** ``flutter create --org <org-name> <project-name>``
+
+- **Add package:** ``flutter pub add <package>``
+
+- **Remove package:** ``flutter pub remove <package>``
+
+- **Run flutter project:** ``flutter run``
+
+
+## References:
+
+- [Flutter Official Package Repository](https://pub.dev/)
+
