@@ -24,6 +24,8 @@
 
 - [Error Handling](./Docs/12.%20Error%20Handling.md)
 
+- [Formatting Date Time and Adding Loading Spinner](./Docs/13.%20Formatting%20Time%20and%20Loading%20Spinner.md)
+
 
 
 

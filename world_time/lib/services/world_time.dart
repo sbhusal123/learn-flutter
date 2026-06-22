@@ -9,6 +9,8 @@ class WorldTime {
   String flag; // flag image asset name
   String url; // location url (path) for api endpoint
 
+  late bool isDayTime;
+
   // Constructor
   WorldTime({required this.location, required this.flag, required this.url});
 
@@ -40,6 +42,9 @@ class WorldTime {
 
       // set time property
       time = DateFormat.jm().format(now);
+
+      // determine day or night
+      isDayTime = now.hour >= 6 && now.hour <= 18 ? true : false;
     } catch(e) {
       // print error
       print('ERROR Getting time: $e');
