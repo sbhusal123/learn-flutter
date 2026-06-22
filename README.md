@@ -12,6 +12,10 @@
 
 - [Stateful Widget](./Docs/6.%20Stateful%20Widget.md)
 
+- [Handling List Of States and Separating Widgets](./Docs/7.%20Handling%20List%20of%20States.md)
+
+- [Function As A Parameter: Drilling Down State Setter Handlers](./Docs/8.%20Function%20As%20A%20Parameter.md)
+
 
 
 ## Projects In This Repo:

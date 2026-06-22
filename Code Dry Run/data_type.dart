@@ -29,4 +29,9 @@ void main() {
 
   // Map<String, num> ages = {"Surya": 22, "Ram": 20};
   // print(ages);
+
+  List<int> nums = [1, 2, 3, 4, 5];
+
+  List<int> even = nums.where((num) => num % 2 == 0).toList();
+  print(even);
 }
