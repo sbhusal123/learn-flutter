@@ -22,6 +22,8 @@
 
 - [Handling synchronous HTTP/API Requests: Futures, Async And Await](./Docs/11.%20Handling%20Async%20Requests.md)
 
+- [Error Handling](./Docs/12.%20Error%20Handling.md)
+
 
 
 
